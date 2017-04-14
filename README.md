@@ -12,6 +12,12 @@ by default but can also use a MongoDB server by changing the config (see below).
 
 Demo: [http://openkb.mrvautin.com](http://openkb.mrvautin.com)
 
+### Docker Build
+docker build -t rizkyario/isara-knowledge .
+docker push rizkyario/isara-knowledge
+docker run --name isara-knowledge -p 80:4444 rizkyario/isara-knowledge
+
+
 ### Installation
 
 1. Clone Repository: `git clone https://github.com/mrvautin/openKB.git && cd openKB`
