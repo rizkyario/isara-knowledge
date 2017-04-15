@@ -214,7 +214,7 @@ app.use(app_context + '/stylesheets', express.static(path.join(__dirname, 'publi
 app.use(app_context + '/fonts', express.static(path.join(__dirname, 'public/fonts')));
 app.use(app_context + '/javascripts', express.static(path.join(__dirname, 'public/javascripts')));
 app.use(app_context + '/lunr', express.static(path.join(__dirname, 'node_modules/lunr')));
-app.use(app_context + '/favicon.png', express.static(path.join(__dirname, 'public/favicon.png')));
+app.use(app_context + '/favicon.ico', express.static(path.join(__dirname, 'public/favicon.ico')));
 
 // serving static content
 app.use(express.static(path.join(__dirname, 'public')));
@@ -294,7 +294,7 @@ if(config.settings.database.type === 'embedded'){
     indexArticles(db, function(err){
         // lift the app
         app.listen(app.get('port'), app.get('bind'), function (){
-            console.log('Isara Support running on host: http://' + app.get('bind') + ':' + app.get('port'));
+            console.log('isara-support running on host: http://' + app.get('bind') + ':' + app.get('port'));
             app.emit('isara-support-started');
         });
     });
