@@ -294,8 +294,8 @@ if(config.settings.database.type === 'embedded'){
     indexArticles(db, function(err){
         // lift the app
         app.listen(app.get('port'), app.get('bind'), function (){
-            console.log('openKB running on host: http://' + app.get('bind') + ':' + app.get('port'));
-            app.emit('openKBstarted');
+            console.log('Isara Support running on host: http://' + app.get('bind') + ':' + app.get('port'));
+            app.emit('isara-support-started');
         });
     });
 }else{
@@ -318,8 +318,8 @@ if(config.settings.database.type === 'embedded'){
         indexArticles(db, function(err){
             // lift the app
             app.listen(app.get('port'), app.get('bind'), function (){
-                console.log('openKB running on host: http://' + app.get('bind') + ':' + app.get('port'));
-                app.emit('openKBstarted');
+                console.log('isara-support running on host: http://' + app.get('bind') + ':' + app.get('port'));
+                app.emit('isara-support-started');
             });
         });
     });

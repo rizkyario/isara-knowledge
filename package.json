@@ -1,7 +1,7 @@
 {
-  "name": "openkb",
+  "name": "isara-support",
   "version": "1.0.20",
-  "description": "openKB is an Open Source Nodejs Markdown based knowledge base/FAQ/Wiki app with powerful lunr search",
+  "description": "Isara is Duolingo for Sign Language; it leverages the power of community to preserve, and teach sign languages.",
   "private": false,
   "scripts": {
     "start": "node app.js",
