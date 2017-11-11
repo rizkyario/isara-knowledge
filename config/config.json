@@ -22,7 +22,7 @@
         "mathjax": false,
         "mathjax_input_mode": "TeX-MML-AM_CHTML",
         "app_context": "",
-        "links_blank_page": true,
+        "links_blank_page": false,
         "database": {
             "type": "embedded"
         },
